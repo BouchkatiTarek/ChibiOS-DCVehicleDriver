@@ -26,16 +26,16 @@ typedef struct {
 /*===========================================================================*/
 
 //init
-void DCVehicleConfig();
+void DCVehicleConfig(DCVehicle *dcvehicle);
 //commands
-void DCVehicleStop();
-void DCVehicleFree();
-void DCVehicleForward(int speedPercent);
-void DCVehicleBackward(int speedPercent);
-void DCVehicleTurnRight(int speedPercent);
-void DCVehicleTurnLeft(int speedPercent);
-void DCVehicleSpinRight(int speedPercent);
-void DCVehicleSpinLeft(int speedPercent);
+void DCVehicleStop(DCVehicle *dcvehicle);
+void DCVehicleFree(DCVehicle *dcvehicle);
+void DCVehicleForward(DCVehicle *dcvehicle, int speedPercent);
+void DCVehicleBackward(DCVehicle *dcvehicle, int speedPercent);
+void DCVehicleTurnRight(DCVehicle *dcvehicle, int speedPercent);
+void DCVehicleTurnLeft(DCVehicle *dcvehicle, int speedPercent);
+void DCVehicleSpinRight(DCVehicle *dcvehicle, int speedPercent);
+void DCVehicleSpinLeft(DCVehicle *dcvehicle, int speedPercent);
 
 
 #endif /* DC_VEHICLE_H_ */
